@@ -1,0 +1,23 @@
+### Get note
+get http://localhost:3000/note
+
+### Create note
+POST http://localhost:3000/add
+Content-Type: application/json
+
+{
+    "title" : "test",
+    "content": "mencoba rest"
+}
+
+### Update note
+PUT http://localhost:3000/note-update/1
+Content-Type: application/json
+
+{
+    "title" : "test upate",
+    "content" : "rest update"
+}
+
+### Delete note
+DELETE http://localhost:3000/note-delete/2
