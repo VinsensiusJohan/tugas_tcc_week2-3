@@ -11,7 +11,7 @@ Content-Type: application/json
 }
 
 ### Update note
-PUT http://localhost:3000/note-update/1
+PUT http://localhost:3000/note-update/3
 Content-Type: application/json
 
 {
