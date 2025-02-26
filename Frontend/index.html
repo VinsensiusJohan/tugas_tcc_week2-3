@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+</head>
+<body>
+    <h1>Catatan</h1>
+    <button>Tambah</button>
+    <form>
+        <label for="title"></label>
+        <input 
+            data-id 
+            id="title" 
+            type="text"
+            placeholder="Judul"
+            required>
+        <label for="content"></label>
+        <input
+            data-id
+            id="content" 
+            type="text"
+            placeholder="Content"
+            required>
+        <button type="submit">Simpan</button>
+    </form>
+    <main>
+        <table border=1px>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Judul</th>
+                    <th>Catatan</th>
+                    <th>Tanggal buat</th>
+                    <th>Tanggal edit</th>
+                </tr>
+            </thead>
+            <tbody id="table-note"></tbody>
+        </table>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
