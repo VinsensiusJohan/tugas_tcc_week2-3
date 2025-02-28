@@ -1,0 +1,128 @@
+body{
+    padding: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.note-footer {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.btn-edit{
+    width: auto;
+    padding: 10px 15px;
+    background-color: #9B59B6;
+    color: white;
+    border: 1px solid #7c4791;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btn-del {
+    width: auto;
+    padding: 10px 15px;
+    background-color: #FF5733;
+    color: white;
+    border: 1px solid #c44326;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.expand_btn{
+    width: auto;
+    padding: 10px 20px;
+    background-color: #fffb0b;
+    color: rgb(0, 0, 0);
+    border: 1px solid #d1ce01;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.green{
+    width: auto;
+    padding: 10px 20px;
+    background-color: #06c200;
+    color: white;
+    border: 1px solid #058d00;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.red{
+    width: auto;
+    padding: 10px 20px;
+    background-color: #f53716;
+    color: white;
+    border: 1px solid #be2c12;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+
+#noteForm button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+
+#formDiv {
+    width: 300px; 
+    margin-left: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #c9c9c9;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 170px;
+    resize: none;
+}
+
+.note-card {
+    border: 2px solid #ccc;
+    border-radius: 10px; 
+    padding: 15px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    max-width: 500px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.note-title{
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 600;
+
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
