@@ -1,5 +1,6 @@
 const form = document.querySelector("form");
 const red_green_btn = document.querySelector("#tambah_btn");
+const backendURL = "http://35.202.49.14:3000";
 
 red_green_btn.addEventListener("click", function () {
     if (this.classList.contains("green")) {
@@ -22,7 +23,6 @@ form.addEventListener('submit', (e) => {
 
     const id = element_title.dataset.id;
 
-    const backendURL = "http://35.202.49.14:3000";
 
     if(id == ""){
         axios
