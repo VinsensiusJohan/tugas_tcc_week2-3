@@ -22,9 +22,11 @@ form.addEventListener('submit', (e) => {
 
     const id = element_title.dataset.id;
 
+    const backendURL = "http://35.202.49.14:3000";
+
     if(id == ""){
         axios
-            .post("http://localhost:3000/add", {title, content})
+            .post(`${backendURL}/add`, {title, content})
             .then(()=>{
                 element_title.value = "";
                 element_content.value = "";
@@ -36,7 +38,7 @@ form.addEventListener('submit', (e) => {
             .catch((error) => console.error(error.message));
     } else {
         axios
-            .put(`http://localhost:3000/note-update/${id}`, {title, content})
+            .put(`${backendURL}/note-update/${id}`, {title, content})
             .then(() => {
                 element_title.value = "";
                 element_content.value = "";
@@ -51,7 +53,7 @@ form.addEventListener('submit', (e) => {
 
 async function getNote() {
     try {
-        const {data} = await axios.get("http://localhost:3000/note");
+        const {data} = await axios.get(`${backendURL}/note`);
         const noteList = document.querySelector('#note-list');
         noteList.innerHTML = "";
 
@@ -73,7 +75,7 @@ function deleteNote() {
         btn.addEventListener("click", () => {
             const id = btn.dataset.id;
             axios
-                .delete(`http://localhost:3000/note-delete/${id}`)
+                .delete(`${backendURL}/note-delete/${id}`)
                 .then(()=> getNote())
                 .catch((error) => console.error(error.message));
         });
