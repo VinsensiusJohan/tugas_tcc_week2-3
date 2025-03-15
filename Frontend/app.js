@@ -1,6 +1,6 @@
 const form = document.querySelector("form");
 const red_green_btn = document.querySelector("#tambah_btn");
-const backendURL = "http://35.202.49.14:3000";
+const backendURL = "http://34.55.86.116:3000";
 
 red_green_btn.addEventListener("click", function () {
     if (this.classList.contains("green")) {
