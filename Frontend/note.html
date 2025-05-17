@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+</head>
+<body>
+    <h1>Catatan</h1>
+    <button id="tambah_btn" class="green">Tambah</button>
+    <button id="logout" class="red">Logout</button>
+    <div id="formDiv">
+        <form id="noteForm">
+            <label for="title"></label>
+            <input 
+                data-id 
+                id="title" 
+                type="text"
+                placeholder="Judul"
+                required>
+            <label for="content"></label>
+            <textarea
+                data-id
+                id="content" 
+                type="text"
+                placeholder="Content"
+                required></textarea>
+            <button type="submit" id="submit_btn">Simpan</button>
+        </form>
+    </div>
+    <main>
+        <div id="note-list"></div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
