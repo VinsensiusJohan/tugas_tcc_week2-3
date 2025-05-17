@@ -3,35 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes</title>
+    <title>Login</title>
 </head>
 <body>
-    <h1>Catatan</h1>
-    <button id="tambah_btn" class="green">Tambah</button>
-    <div id="formDiv">
-        <form id="noteForm">
-            <label for="title"></label>
-            <input 
-                data-id 
-                id="title" 
-                type="text"
-                placeholder="Judul"
-                required>
-            <label for="content"></label>
-            <textarea
-                data-id
-                id="content" 
-                type="text"
-                placeholder="Content"
-                required></textarea>
-            <button type="submit" id="submit_btn">Simpan</button>
-        </form>
-    </div>
-    <main>
-        <div id="note-list"></div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="app.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <form id="authForm">
+        <h2>Notes</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="text" id="password" placeholder="Password" required>
+        <button type="submit" name="action" value="login">Login</button>
+        <button type="submit" name="action" value="register">Register</button>
+    </form>
+    <script src="loginReg.js" defer></script>
+    <link rel="stylesheet" href="index_lr.css">
 </body>
 </html>
