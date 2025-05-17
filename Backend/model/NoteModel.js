@@ -1,7 +1,9 @@
 import { Sequelize } from "sequelize";
 import db from "../config/Database.js"
 
-const Note = db.define('note', {
+const Note = db.define(
+    'note', 
+    {
     title: Sequelize.STRING,
     content: Sequelize.TEXT,
     },{
